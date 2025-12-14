@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - HOMES HUB</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --card-bg: #fff;
+      --header-bg: #fff;
+      --shadow: rgba(0,0,0,0.1);
+      --primary: #e62b1e;
+    }
+    .dark-mode {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --card-bg: #1e1e1e;
+      --header-bg: #1a1a1a;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: var(--bg-color); color: var(--text-color); }
+    .container { width: 90%; max-width: 400px; margin: 30px auto; }
+    .logo { color: var(--primary); font-size: 2rem; font-weight: bold; text-align: center; margin-bottom: 30px; text-transform: uppercase; }
+    .form-group { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 8px; font-weight: 600; }
+    input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; background: var(--card-bg); color: var(--text-color); }
+    button { width: 100%; padding: 14px; background: var(--primary); color: white; border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer; }
+    .links { text-align: center; margin-top: 20px; }
+    .links a { color: var(--primary); text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">HOMES HUB</h1>
+    <form id="register-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone (Optional)</label>
+        <input type="tel" id="phone">
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <div class="links">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+      <p><a href="index.html">← Back to Home</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Simple register (for demo only)
+    document.getElementById('register-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Registration successful! (This is a demo — no real account created)');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

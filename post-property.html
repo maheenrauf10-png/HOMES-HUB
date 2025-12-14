@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post Property - HOMES HUB</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+    .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; }
+    h1 { color: #e62b1e; margin-bottom: 20px; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+    button { background: #e62b1e; color: white; padding: 12px 30px; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+    .info { background: #e62b1e; color: white; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="info">
+      <h2>🏠 Sell Your Property with HOMES HUB</h2>
+      <p>Reach thousands of potential buyers. List your property for free!</p>
+    </div>
+
+    <form id="property-form">
+      <div class="form-group">
+        <label for="title">Property Title*</label>
+        <input type="text" id="title" required placeholder="e.g., Modern Apartment in DHA">
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location*</label>
+        <input type="text" id="location" required placeholder="e.g., Lahore, DHA Phase 5">
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price (PKR in Crores)*</label>
+        <input type="number" id="price" step="0.1" min="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="type">Property Type*</label>
+        <select id="type" required>
+          <option value="">Select Type</option>
+          <option value="house">House</option>
+          <option value="apartment">Apartment</option>
+          <option value="commercial">Commercial</option>
+          <option value="plot">Plot</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="purpose">Purpose*</label>
+        <select id="purpose" required>
+          <option value="buy">For Sale</option>
+          <option value="rent">For Rent</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="beds">Beds</label>
+        <input type="number" id="beds" min="0">
+      </div>
+
+      <div class="form-group">
+        <label for="baths">Baths</label>
+        <input type="number" id="baths" min="1">
+      </div>
+
+      <div class="form-group">
+        <label for="area">Area (sq. ft)</label>
+        <input type="number" id="area" min="0">
+      </div>
+
+      <div class="form-group">
+        <label for="images">Upload Images (Coming Soon)</label>
+        <input type="file" id="images" multiple disabled>
+        <p style="font-size: 0.85rem; color: #666; margin-top: 5px;">
+          <em>Image upload will be available after backend integration</em>
+        </p>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" rows="5" placeholder="Describe your property..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Your Contact Email*</label>
+        <input type="email" id="contact" required>
+      </div>
+
+      <button type="submit">Submit Property</button>
+    </form>
+  </div>
+  
+  
+
+  <script>
+    document.getElementById('property-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Frontend-only demo
+      alert('✅ Property submitted successfully!\n\nNote: In the live version, this will be saved to our database and reviewed by our team.');
+      
+      // Reset form
+      document.getElementById('property-form').reset();
+    });
+  </script>
+</body>
+</html>
