@@ -672,15 +672,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 ---
 
-## 🎯 Quick Links
 
-- [View Live Demo](#) *(if deployed)*
-- [Download SRS Document](docs/SRS.pdf)
-- [Download SDD Document](docs/SDD.pdf)
-- [View API Documentation](docs/api-docs.md)
-- [Report Issues](https://github.com/your-username/property-adviser/issues)
-
----
 
 **⭐ If you find this project useful, please consider starring the repository!**
 ---
