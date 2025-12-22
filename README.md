@@ -660,19 +660,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 ---
 
-## 📞 Contact & Support
 
-| Contact Method | Details |
-|----------------|---------|
-| **Developer** | Maheen Rauf |
-| **Email** | maheen.rauf@example.com |
-| **University** | The Islamia University of Bahawalpur |
-| **Department** | Software Engineering |
-| **Project Link** | [GitHub Repository](https://github.com/your-username/property-adviser) |
-
-**Note**: This is an academic project. For production deployment, additional security audits and optimizations are recommended.
-
----
 
 <div align="center">
 
